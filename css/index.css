@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("Oswald-Light.ttf") format("truetype");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeaea;
+}
+
+body h1 {
+  text-align: center;
+  margin: 0.3em auto;
+  font-family: Sans-Serif;
+  color: #0088a1;
+}
+.container {
+  background: transparent;
+  padding: 0.5em;
+  margin: 0.5em;
+  text-align: center;
+  border-radius: 8px;
+}
+.add-area {
+  background: #fff;
+  padding: 0.5em 0;
+  margin: 0.5em;
+  text-align: center;
+  border-radius: 8px;
+}
+.add-area input {
+  outline: none;
+  border: 0.1px solid #00cefc;
+  padding: 0.7em 0.7em;
+  border-radius: 8px;
+  font-weight: 500;
+  word-spacing: 3px;
+}
+.add-area #add,
+#search {
+  outline: none;
+  border: 0.1px solid #00cefc;
+  padding: 0.7em 0.6em;
+  border-radius: 8px;
+  background: #00bae3;
+  color: #fff;
+}
+.btn-area {
+  float: right;
+  display: flex;
+  gap: 1em;
+}
+.task-list {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0.5em 0.6em;
+  margin: 0.5em;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+}
+.task-list #note {
+  color: #00736e;
+  font-size: 15px;
+  word-spacing: 3px;
+  font-family: Oswald, "Sans-Serif";
+  font-weight: 500;
+  text-align: left;
+}
+.task-list .btn-area button {
+  border: none;
+  outline: none;
+}
+.task-list .btn-area button i {
+  padding: 0.3em;
+}
+.task-list #edit {
+  padding: 0.4em;
+  border-radius: 8px;
+  background: #00bae3;
+  color: #fff;
+  float: right;
+  right: 0;
+}
+.task-list #delete {
+  padding: 0.4em;
+  border-radius: 8px;
+  background: #e34d00;
+  color: #fff;
+  float: right;
+  right: 0;
+}
+#error {
+  text-align: center;
+  justify-content: center;
+  margin: 0.1em auto;
+  font-family: Tahoma;
+  color: #bc5700;
+  font-weight: 500;
+  word-spacing: 4px;
+  display: flex;
+  background: #fff;
+  padding: 0.5em;
+  border-radius: 8px;
+  align-items: center;
+}
+/*
+*
+*     RESPONSIVE DESGINE 
+*
+*/
+
+@media (max-width: 1600px) {
+  .container {
+    width: 30%;
+    margin: 25% auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 50%;
+    margin: 25% auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 70%;
+    margin: 25% auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
